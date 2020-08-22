@@ -125,15 +125,18 @@ h2 {
 
 .overlay-inner {
   background: white;
-  width: 700px;
+  max-width: 80%;
+  /* max-height: 80%; */
   padding: 20px;
 }
 
 .overlay img {
   width: 100%;
+  max-height: 80vh;
 }
 
 .close {
+  display: block;
   background: none;
   color: black;
   border: 0;
@@ -152,4 +155,11 @@ h2 {
 .item.size4 {
   grid-row: span 4;
   grid-column: span 4;
+}
+
+@media (max-width: 600px) {
+  .overlay-inner {
+    max-width: 95%;
+    padding: 10px;
+  }
 }
