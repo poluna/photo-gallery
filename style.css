@@ -14,7 +14,7 @@ body {
 .pannel {
   display: grid;
   height: 100vh;
-  background-image: url(./images/pannel.jpg);
+  background-image: url(../images/pannel.jpg);
   background-size: cover;
   align-items: center;
   align-content: center;
@@ -118,20 +118,19 @@ h2 {
 }
 
 .overlay.open {
-  display: grid;
+  display: flex;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 }
 
 .overlay-inner {
   background: white;
   max-width: 80%;
-  /* max-height: 80%; */
   padding: 20px;
 }
 
 .overlay img {
-  width: 100%;
+  max-width: 100%;
   max-height: 80vh;
 }
 
